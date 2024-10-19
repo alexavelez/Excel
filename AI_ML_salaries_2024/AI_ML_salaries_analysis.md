@@ -83,9 +83,9 @@ The pivot table 1 displays the count of observations (data entries) for each yea
 43,682 observations for 2024.
 In total, the dataset includes 54,156 observations.
 
-**Average salary (in local currency) in 2024:** $164,713
-**Average salary in USD in 2024:** $159,544
+**Average salary (in local currency) in 2024:**  $163,369 (This cannot be used for comparison between countries, except to analyze data for the same country)
+**Average salary in USD in 2024:** $162,043
 **Remote work ratio in 2024:** Most roles are not fully remote: 81% are neither remote nor hybrid, while 19% are fully remote.
-**Salary range in USD 2024:** From $15,000 to $800,000.
+**Salary range in USD 2024:** From $15,107 to $800,000.
 
 
