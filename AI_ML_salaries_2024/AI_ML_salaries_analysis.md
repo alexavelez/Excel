@@ -13,6 +13,18 @@ Understanding salary trends is essential for both employers and professionals as
 * What is the average salary based on different employment types (full-time, part-time, contract)?
 * How does company size influence salaries across job titles or experience levels?
 
+I will answer these questions for the year 2024 and compare them with previous years.
+
+## Deliverables:
+As part of this analysis, the following deliverables will be provided:
+
+Excel Analysis:
+
+A comprehensive analysis using pivot tables to summarize key salary trends. The pivot tables will allow for filtering and exploring salary data across different job titles, experience levels, regions, and employment types.
+Dynamic Dashboard:
+
+An interactive Excel dashboard that visually represents key findings through charts and graphs. This dashboard will be designed to easily update from the source dataset, ensuring that the analysis remains current as new data becomes available.
+
 ## The dataset
 
 The dataset contains a single table with all salary information structured as follows:
@@ -60,5 +72,20 @@ There are no missing values in the dataset.
 
 - The data includes records from 2020 to 2024.
 
+<img width="184" alt="PIVOT_1" src="https://github.com/user-attachments/assets/74215050-7db8-482e-b87d-9a61e2b40429">
+
+The pivot table 1 displays the count of observations (data entries) for each year in the dataset, organized by the "work_year" field. Specifically, there are:
+
+75 observations for the year 2020,
+218 observations for 2021,
+1,659 observations for 2022,
+8,522 observations for 2023, and
+43,682 observations for 2024.
+In total, the dataset includes 54,156 observations.
+
+**Average salary (in local currency) in 2024:** $164,713
+**Average salary in USD in 2024:** $159,544
+**Remote work ratio in 2024:** Most roles are not fully remote: 81% are neither remote nor hybrid, while 19% are fully remote.
+**Salary range in USD 2024:** From $15,000 to $800,000.
 
 
