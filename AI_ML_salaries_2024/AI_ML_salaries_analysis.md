@@ -21,9 +21,10 @@ As part of this analysis, the following deliverables will be provided:
 Excel Analysis:
 
 A comprehensive analysis using pivot tables to summarize key salary trends. The pivot tables will allow for filtering and exploring salary data across different job titles, experience levels, regions, and employment types.
+
 Dynamic Dashboard:
 
-An interactive Excel dashboard that visually represents key findings through charts and graphs. This dashboard will be designed to easily update from the source dataset, ensuring that the analysis remains current as new data becomes available.
+An interactive Excel dashboard that visually represents key findings through charts and graphs.
 
 ## The dataset
 
@@ -68,11 +69,29 @@ L :more than 250 employees (large)
 ### Missing Values
 There are no missing values in the dataset.
 
+### Data Preparation
+All the columns are ready for analysis except for the job_title column. The job_title column contains 252 unique job titles. Some titles refer to the same role but are expressed with different wording or abbreviations. For instance, roles like "Business Intelligence Data Analyst," "BI Analyst," and "Business Intelligence Analyst," all describe the same type of job but are written with slight variations. Moreover, there is overlap between many of the roles. 
+
+To ensure consistency in the analyses, these titles need to be standardized or grouped into common categories. For this analysis, I opted for groping them into the following categories:
+
+- Data Analysis
+- Data Science
+- Data Engineering
+- Data Management
+- Business Intelligence
+- Machine Learning
+- Software & Cloud Engineering
+- Product & Project Management
+- Research & Specialized Roles
+- General & Other Roles
+
+To achieve this, I created a new column named job_category and a lookup table in a separate sheet named job_category_lookup. This allows for changes to the category assigned to job titles in the future if needed. 
+
 ## Summary statistics
 
 The data includes records from 2020 to 2024. The pivot table 1 displays the count of observations (data entries) for each year in the dataset, organized by the "work_year" field. Specifically, there are:
 
-<img width="246" alt="pivot_1" src="https://github.com/user-attachments/assets/3559e49a-47c0-407c-b60f-aceba97ab0af">
+<img width="272" alt="Pivot1" src="https://github.com/user-attachments/assets/50549cf2-54db-4b86-8a61-a3de03575daa">
 
 75 observations for the year 2020,
 218 observations for 2021,
@@ -89,10 +108,43 @@ Table 1 presents the summary statistics of salaries from 2020 to 2024, providing
 
 **Average salary in USD in 2024:** $162,043  
 
-**Remote work ratio in 2024:** Most roles are not fully remote: 81% are neither remote nor hybrid, while 19% are fully remote.  
+**Remote work ratio in 2024:** Most roles are not fully remote: 81% are neither remote nor hybrid, while 19% are fully remote.  The pivot table 2 shows the remote work ratio by year from 2020 to 2024.
 
 **Salary range in USD 2024:** From $15,107 to $800,000.  
 
+## Job Title Distribution
+
+The top 5 job titles:
+
+- Data Scientist:	92 records
+- Data Engineer:	91 records
+- Data Analyst:	90 records
+- Software Engineer:	89 records
+- Machine Learning Engineer: 88 records
+
+However, as discussed earlier, this list doesn't show the full picture, as other similar roles also fall under the title "Data Scientist," such as Data Scientist Lead, Decision Scientist, Lead Data Scientist, Applied Data Scientist, Principal Data Scientist, etc.
+
+The pivot table 3 shows Job Category Distribution with Percentage of Total. Grouped by category, the top 5 job roles are:
+
+<img width="373" alt="pivot3" src="https://github.com/user-attachments/assets/48f3e26f-b195-44f1-b68f-fab7c6abcced">
+
+## Experience Level Distribution
+
+Senior (SE): 32,206 (59.5%) records
+Mid-level (MI): 15,872 (29.3%) records
+Entry-level (EN): 4,908 (9.1%) records
+Executive (EX): 1,170 (2.1%)records
+
+## Employment Type Distribution:
+
+Full-time (FT): 53,953 records (99.62%)
+Part-time (PT), Contract (CT), and Freelance (FL) roles are much fewer in number (0.38%).
+
+## Company Location Distribution:
+
+The dataset contains companies from 82 different countries; however, the vast majority are based in the US, which accounts for 93.46% of the total.
+
+<img width="375" alt="Pivot6" src="https://github.com/user-attachments/assets/35d79433-1a78-4a14-9e9c-ee216fa17eb6">
 
 
 
