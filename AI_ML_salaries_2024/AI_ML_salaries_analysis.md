@@ -1,8 +1,8 @@
-#Artificial Intelligence and Machine Learning and Data-Related Jobs Salaries 2024
+# Artificial Intelligence and Machine Learning and Data-Related Jobs Salaries 2024
 
 This dataset contains global information about artificial intelligence, machine learning, and data-related job salaries. It was obtained from AI Jobs and is published in the public domain under the Creative Commons CC0 license, allowing unrestricted use.
 
-As AI and machine learning continue tranforming industries, the demand for skilled professionals in these fields is growing rapidly. Roles such as Data Scientist, Research Engineer, and Machine Learning Engineer are becoming critical across sectors, from technology startups to large enterprises. I sought to analyze this dataset to uncover valuable insights into compensation trends for these roles, offering a global perspective on salary distribution across various experience levels, employment types, company sizes, and geographical locations.
+As AI and machine learning continue transforming industries, the demand for skilled professionals in these fields is growing rapidly. Roles such as Data Scientist, Research Engineer, and Machine Learning Engineer are becoming critical across sectors, from technology startups to large enterprises. I sought to analyze this dataset to uncover valuable insights into compensation trends for these roles, offering a global perspective on salary distribution across various experience levels, employment types, company sizes, and geographical locations.
 
 Understanding salary trends is essential for both employers and professionals as they navigate a competitive landscape. For job seekers, this data provides insight into how factors such as experience, remote work, and company size influence salaries. For employers, it serves as a benchmark for attracting and retaining top talent in this evolving field.
 
@@ -91,7 +91,8 @@ To achieve this, I created a new column named job_category and a lookup table in
 
 The data includes records from 2020 to 2024. The pivot table 1 displays the count of observations (data entries) for each year in the dataset, organized by the "work_year" field. Specifically, there are:
 
-<img width="272" alt="Pivot1" src="https://github.com/user-attachments/assets/50549cf2-54db-4b86-8a61-a3de03575daa">
+<img width="272" alt="Pivot1" src="https://github.com/user-attachments/assets/50549cf2-54db-4b86-8a61-a3de03575daa">  
+
 
 75 observations for the year 2020,
 218 observations for 2021,
@@ -102,7 +103,8 @@ In total, the dataset includes 54,156 observations.
 
 Table 1 presents the summary statistics of salaries from 2020 to 2024, providing insights into key metrics such as the average, median, minimum, and maximum salaries for each year. This data allows for a comparison of salary trends across different years.
 
-<img width="718" alt="table_1" src="https://github.com/user-attachments/assets/597ac082-7018-47b6-814f-cbb8f00d0877">
+<img width="718" alt="table_1" src="https://github.com/user-attachments/assets/597ac082-7018-47b6-814f-cbb8f00d0877">  
+
 
 **Average salary (in local currency) in 2024:**  $163,369 (This cannot be used for comparison between countries, except to analyze data for the same country)  
 
@@ -126,7 +128,8 @@ However, as discussed earlier, this list doesn't show the full picture, as other
 
 The pivot table 3 shows Job Category Distribution with Percentage of Total. Grouped by category, the top 5 job roles are:
 
-<img width="373" alt="pivot3" src="https://github.com/user-attachments/assets/48f3e26f-b195-44f1-b68f-fab7c6abcced">
+<img width="373" alt="pivot3" src="https://github.com/user-attachments/assets/48f3e26f-b195-44f1-b68f-fab7c6abcced">  
+
 
 ## Experience Level Distribution
 
@@ -142,11 +145,17 @@ Part-time (PT), Contract (CT), and Freelance (FL) roles are much fewer in number
 
 ## Company Location Distribution:
 
-The dataset contains companies from 82 different countries; however, the vast majority are based in the US, which accounts for 93.46% of the total.
+The dataset contains companies from 82 different countries; however, the vast majority are based in the US, which accounts for 93.46% of the total. The Pivot Table 6 shows the distribution of top 5 countries by company location.
 
-<img width="375" alt="Pivot6" src="https://github.com/user-attachments/assets/35d79433-1a78-4a14-9e9c-ee216fa17eb6">
+<img width="450" alt="pivot 6" src="https://github.com/user-attachments/assets/39a5f921-5de4-40e4-becf-e176206419d4">
 
+## Distribution of Employee Country of Residence 
 
+The dataset contains 91 unique countries of residence for employees, while company locations are distributed across 82 countries. Despite the wider range of employee residences, the top 5 countries of residence closely mirror the top 5 company locations. The majority of employees reside in the US, representing 93.20%, followed by Canada (3.20%), Great Britain (2.96%), Germany (0.33%), and Spain (0.31%). This strong alignment suggests that, in most cases, employees are likely working in the same country where they reside, although the presence of remote work across borders cannot be completely ruled out.
+
+The Pivot Table 7 shows the top 5 countries by employee residence 
+
+<img width="305" alt="pivot7" src="https://github.com/user-attachments/assets/7f22fa59-681b-4f0c-97f0-ae97081cf3d9">
 
 Rate of remote ratio decreasing
 
