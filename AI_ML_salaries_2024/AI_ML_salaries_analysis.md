@@ -6,7 +6,7 @@ As AI and machine learning continue transforming industries, the demand for skil
 
 Understanding salary trends is essential for both employers and professionals as they navigate a competitive landscape. For job seekers, this data provides insight into how factors such as experience, remote work, and company size influence salaries. For employers, it serves as a benchmark for attracting and retaining top talent in this evolving field.
 
-## The questions I aim to answer with this dataset are:
+### The questions I aim to answer with this dataset are:
 * What is the average salary for different roles (e.g., Data Scientist, Research Engineer) across various experience levels?
 * How does the remote work ratio affect salaries across different regions or job roles?
 * How do salaries differ across regions (employee residence vs. company location)?
@@ -15,7 +15,7 @@ Understanding salary trends is essential for both employers and professionals as
 
 I will answer these questions for the year 2024 and compare them with previous years.
 
-## Deliverables:
+### Deliverables:
 As part of this analysis, the following deliverables will be provided:
 
 Excel Analysis:
@@ -26,7 +26,7 @@ Dynamic Dashboard:
 
 An interactive Excel dashboard that visually represents key findings through charts and graphs.
 
-## The dataset
+### The dataset
 
 The dataset contains a single table with all salary information structured as follows:
 
@@ -87,7 +87,7 @@ To ensure consistency in the analyses, these titles need to be standardized or g
 
 To achieve this, I created a new column named job_category and a lookup table in a separate sheet named job_category_lookup. This allows for changes to the category assigned to job titles in the future if needed. 
 
-## Summary statistics
+### Summary statistics
 
 The data includes records from 2020 to 2024. The pivot table 1 displays the count of observations (data entries) for each year in the dataset, organized by the "work_year" field. Specifically, there are:
 
@@ -114,7 +114,7 @@ Table 1 presents the summary statistics of salaries from 2020 to 2024, providing
 
 **Salary range in USD 2024:** From $15,107 to $800,000.  
 
-## Job Title Distribution
+### Job Title Distribution
 
 The top 5 job titles:
 
@@ -131,31 +131,62 @@ The pivot table 3 shows Job Category Distribution with Percentage of Total. Grou
 <img width="373" alt="pivot3" src="https://github.com/user-attachments/assets/48f3e26f-b195-44f1-b68f-fab7c6abcced">  
 
 
-## Experience Level Distribution
+### Experience Level Distribution
 
 Senior (SE): 32,206 (59.5%) records
 Mid-level (MI): 15,872 (29.3%) records
 Entry-level (EN): 4,908 (9.1%) records
 Executive (EX): 1,170 (2.1%)records
 
-## Employment Type Distribution:
+### Employment Type Distribution:
 
 Full-time (FT): 53,953 records (99.62%)
 Part-time (PT), Contract (CT), and Freelance (FL) roles are much fewer in number (0.38%).
 
-## Company Location Distribution:
+### Company Location Distribution:
 
 The dataset contains companies from 82 different countries; however, the vast majority are based in the US, which accounts for 93.46% of the total. The Pivot Table 6 shows the distribution of top 5 countries by company location.
 
 <img width="450" alt="pivot 6" src="https://github.com/user-attachments/assets/39a5f921-5de4-40e4-becf-e176206419d4">
 
-## Distribution of Employee Country of Residence 
+### Distribution of Employee Country of Residence 
 
 The dataset contains 91 unique countries of residence for employees, while company locations are distributed across 82 countries. Despite the wider range of employee residences, the top 5 countries of residence closely mirror the top 5 company locations. The majority of employees reside in the US, representing 93.20%, followed by Canada (3.20%), Great Britain (2.96%), Germany (0.33%), and Spain (0.31%). This strong alignment suggests that, in most cases, employees are likely working in the same country where they reside, although the presence of remote work across borders cannot be completely ruled out.
 
 The Pivot Table 7 shows the top 5 countries by employee residence 
 
 <img width="305" alt="pivot7" src="https://github.com/user-attachments/assets/7f22fa59-681b-4f0c-97f0-ae97081cf3d9">
+
+### What is the average salary for different roles (e.g., Data Scientist, Research Engineer) across various experience levels in 2024?
+
+To answer the question "What is the average salary for different roles (e.g., Data Scientist, Research Engineer) across various experience levels?" based on the provided tables:
+
+The average salary varies significantly across different roles and experience levels. For example:
+
+**Data Science** roles show steady increases across experience levels, with entry-level positions averaging $151,503, mid-level positions at $167,883, senior-level at $181,410, and executive-level roles reaching $209,536.  
+
+**Data Engineering** also reflects a similar upward trend, with entry-level salaries averaging $123,163, mid-level at $146,995, senior-level at $167,219, and executive-level roles at $210,316.  
+
+**Business Intelligence** sees a strong jump at the executive level, where salaries average $180,035 compared to entry-level at $100,683, mid-level at $131,130, and senior-level at $133,446.  
+
+**Machine Learning & AI** command high salaries, particularly at the executive level, where the average salary is $274,689. Entry-level roles start at $167,015, mid-level positions earn $185,435, and senior-level salaries are $203,332.  
+
+**Product & Project Management** roles peak at $175,398 in mid-level positions, while executive-level salaries drop slightly to $177,993.
+
+I have included an interactive chart in the dashboard named  "Average Salary by Job Category and Experience Level" to visualize and compare this information.
+
+Additionally, for certain roles, the biggest percentage increase in salary happens at different stages of experience:
+
+- For Data Engineering, Product & Project Management, Research & Specialized Roles, and Software & Cloud Engineering, the largest salary increase occurs from entry to mid-level.
+- In contrast, Data Management and Data Analysis see the highest salary growth between mid-level and senior-level positions.
+- Business Intelligence and General & Other Roles experience the most significant salary jump at the executive level.
+
+
+The Pivot Table 8 shows the salary percentage change by job category and experience level. The highest average salary increase is highlighted for every job category.
+
+<img width="789" alt="pivot8" src="https://github.com/user-attachments/assets/f5927457-43cc-459f-83cd-d1ddec749eb7">
+
+
 
 Rate of remote ratio decreasing
 
